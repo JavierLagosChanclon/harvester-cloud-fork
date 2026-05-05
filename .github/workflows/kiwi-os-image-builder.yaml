@@ -3,6 +3,9 @@ name: Build the certified openSUSE Leap 16.0 image for harvester-cloud
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 env:
   IMAGE_NAME: opensuse-leap-16-0-harv-cloud-image.x86_64
   BUILD_DIR: ${{ github.workspace }}/modules/harvester/kiwi-os-image-builder
